@@ -1,7 +1,7 @@
 ## CaesarCipher
 Caesar Cipher Repo - Ruby Programming, ODIN Project
 
-#### Function: [caesar_cipher](https://github.com/turbopro/CaesarCipher/blob/master/caesar_cipher.rb) 
+#### Function: [caesar_cipher](https://github.com/turbopro/CaesarCipher/blob/master/caesar_cipher.rb "caesar_cipher.rb file") 
 
 - Takes two arguments: an input string and a shift factor
 - Returns the modified string; the input string is unchanged--read-only
