@@ -10,7 +10,11 @@ Caesar Cipher Repo - Ruby Programming, ODIN Project
 
 
 def caesar_cipher(clear_text, shift_factor)
+
   ciphered = clear_text.dup
+
   shift_factor.times { ciphered.tr!('0-9a-zA-Z','1-90b-zbB-ZA') }
+
   ciphered
+
 end
