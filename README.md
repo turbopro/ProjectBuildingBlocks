@@ -23,8 +23,8 @@ Stock Picker - Ruby Programming, ODIN Project
 - The 'Array#each_index' and 'Array#map.with_index' methods make use of the input array's indices for the required arithmetic
 - The result of each calculation is collected in a temporary hash:
 
-...each key represents an array of the relevant indices  
-...each value represents the relevant result
+   each key represents an array of the relevant indices  
+   each value represents the relevant result
 - [Array#each_index documentation](https://ruby-doc.org/core-2.4.0/Array.html#method-i-each_index "Ruby Doc Page")
 - [Array#map.with_index documentation](https://ruby-doc.org/core-2.4.0/Array.html#method-i-map "Ruby Doc Page")
 
