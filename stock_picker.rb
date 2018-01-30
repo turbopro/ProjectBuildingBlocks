@@ -5,7 +5,7 @@
 # the buy and sell prices that produce the maximum gain
 # The 'Array#each_index' and 'Array#map.with_index' methods make  
 # use of the input array's indices for the required arithmetic 
-# The result of each calculation is collected in the temporary hash: 
+# The result of each calculation is collected in a temporary hash: 
 #   - each key represents an array of the relevant indices
 #   - each value represents the relevant result
 
