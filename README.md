@@ -21,7 +21,8 @@ Stock Picker - Ruby Programming, ODIN Project
 - Takes one argument: an input array of stock prices as integers
 - Returns an array with the indices of the input array related to the buy and sell prices that produce the maximum gain
 - The 'Array#each_index' and 'Array#map.with_index' methods make use of the input array's indices for the required arithmetic
-- The result of each calculation is collected in a temporary hash:
+- The result of each calculation is collected in a temporary hash:  
+
 ... each key represents an array of the relevant indices
 ... each value represents the relevant result
 - [Array#each_index documentation](https://ruby-doc.org/core-2.4.0/Array.html#method-i-each_index "Ruby Doc Page")
