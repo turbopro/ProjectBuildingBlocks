@@ -13,7 +13,9 @@ def stock_picker stock_prices
   coll = Hash.new  
   stock_prices.each_index do |i|
     stock_prices.map.with_index(i) do |e, j|
-      coll[[i, j]] = stock_prices[j] - stock_prices[i] if stock_prices[j] 
+      if stock_prices[j] && stock_prices[j] > stock_prices[i]
+        coll[[i, j]] = stock_prices[j] - stock_prices[i]
+      end
     end
   end
 
