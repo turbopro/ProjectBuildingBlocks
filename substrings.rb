@@ -30,7 +30,7 @@ def substrings strings, dictionary
   strings = strings.downcase.gsub(/[^a-z0-9\s]/i, '').split(' ')
   
   strings.each_with_object([]) do |word, arr_obj|
-    dictionary.map { |substr| arr_obj.push(sub) if word.include?(substr) }
+    dictionary.map { |substr| arr_obj.push(substr) if word.include?(substr) }
   end
   .each_with_object(Hash.new(0)) { |match, count| count[match] += 1 }
 
