@@ -28,4 +28,23 @@ Stock Picker - Ruby Programming, ODIN Project
 - [Array#each_index documentation](https://ruby-doc.org/core-2.4.0/Array.html#method-i-each_index "Ruby Doc Page")
 - [Array#map.with_index documentation](https://ruby-doc.org/core-2.4.0/Array.html#method-i-map "Ruby Doc Page")
 
+----
+
+### Project 3 -- Substrings
+Substrings - Ruby Programming, ODIN Project
+
+#### Function: [substrings](https://github.com/turbopro/ProjectBuildingBlocks/blob/master/substrings.rb "substrings.rb file") 
+
+- Takes two arguments: an input string of words, and an array of substrings as a dictionary
+- Returns a hash with each substring (case insensitive) found in the input string of words as an individual element key, with the count of the occurences of the relevant substring as the value
+- The String#downcase method converts all uppercase letters to lowercase
+- The String#gsub method matches and substitutes a character pattern; the pattern is usually a Regular Expression
+- The Enumerator#each_with_object method iterates over the given block for each element with the supplied object, and then returns the object 
+- The 'Array#map method maps the input string to the dictionary  
+- The output array of the nested 'each_with_object' and 'map' iterations is chained to the final 'each_with_object" to build the output hash
+
+- [String#downcase documentation](https://ruby-doc.org/core-2.4.0/String.html#method-i-downcase "Ruby Doc Page")
+- [String#gsub documentation](https://ruby-doc.org/core-2.4.0/String.html#method-i-gsub "Ruby Doc Page")
+- [Enumerator#each_with_object documentation](https://ruby-doc.org/core-2.4.0/Enumerator.html#method-i-each_with_object "Ruby Doc Page")
+- [Array#map documentation](https://ruby-doc.org/core-2.4.0/Array.html#method-i-map "Ruby Doc Page")
 

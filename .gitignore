@@ -1,4 +1,7 @@
 # gitignore for this sub-directory
 # ignore .html files
 *.html
+.directory
+*.bin
+
 
