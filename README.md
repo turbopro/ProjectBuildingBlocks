@@ -55,7 +55,7 @@ Substrings - Ruby Programming, ODIN Project
 ### Project 1 -- Bubble Sort
 Bubble Sort - Ruby Programming, ODIN Project
 
-#### Function: [bubble_sort](https://github.com/turbopro/CaesarCipher/blob/master/caesar_cipher.rb "caesar_cipher.rb file") 
+#### Function: [bubble_sort](https://github.com/turbopro/ProjectBuildingBlocks/blob/master/bubble_sort.rb "bubble_sort.rb file") 
 
 - Takes one argument: an input array of integers
 - Returns the sorted array itself
