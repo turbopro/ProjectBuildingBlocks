@@ -48,3 +48,19 @@ Substrings - Ruby Programming, ODIN Project
 - [Enumerator#each_with_object documentation](https://ruby-doc.org/core-2.4.0/Enumerator.html#method-i-each_with_object "Ruby Doc Page")
 - [Array#map documentation](https://ruby-doc.org/core-2.4.0/Array.html#method-i-map "Ruby Doc Page")
 
+----
+
+## PROJECT: ADVANCED BUILDING BLOCKS
+
+### Project 1 -- Bubble Sort
+Caesar Cipher Repo - Ruby Programming, ODIN Project
+
+#### Function: [bubble_sort](https://github.com/turbopro/CaesarCipher/blob/master/caesar_cipher.rb "caesar_cipher.rb file") 
+
+- Takes one argument: an input array of integers
+- Returns the sorted array itself
+- Uses the splat (*) operator to create an array from a range
+- Uses the begin / end until loop
+- Based on the [Wikipedia Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort "Bubble Sort")
+
+----
