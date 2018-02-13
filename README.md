@@ -53,7 +53,7 @@ Substrings - Ruby Programming, ODIN Project
 ## PROJECT: ADVANCED BUILDING BLOCKS
 
 ### Project 1 -- Bubble Sort
-Caesar Cipher Repo - Ruby Programming, ODIN Project
+Bubble Sort - Ruby Programming, ODIN Project
 
 #### Function: [bubble_sort](https://github.com/turbopro/CaesarCipher/blob/master/caesar_cipher.rb "caesar_cipher.rb file") 
 
