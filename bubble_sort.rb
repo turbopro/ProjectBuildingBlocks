@@ -10,7 +10,7 @@
 
 def bubble_sort arr
   
-  return "Error: #{__method__} requires an array of strings" unless arr.is_a? Array
+  return "Error: #{__method__} requires an array of integers" unless arr.is_a? Array
   return arr if arr.length <= 1
   
   len = arr.length
