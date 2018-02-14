@@ -63,4 +63,12 @@ Bubble Sort - Ruby Programming, ODIN Project
 - Uses the begin / end until loop
 - Based on the [Wikipedia Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort "Bubble Sort")
 
+
+#### Function: [bubble_sort_by](https://github.com/turbopro/ProjectBuildingBlocks/blob/master/bubble_sort.rb "bubble_sort.rb file") 
+
+- Takes one argument: an input array of strings to be sorted and expects a block
+- The block takes two arguments, the two current array elements being compared, and returns negative if the length of the left element is smaller than the length of the right element, 0 if the elements' lengths are equal, and positive if the length of the left element is greater
+- Returns the sorted array itself
+- Inform the user if no block is given, or block is nil or empty
+
 ----

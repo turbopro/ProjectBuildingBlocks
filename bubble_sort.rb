@@ -34,17 +34,12 @@ bubble_sort(Array.new(10000) { rand(1..100000) }); nil
 
 # Takes one argument: an input array of strings to be sorted
 # and expects a block
-# [The block takes two arguments, the two current array elements 
+# The block takes two arguments, the two current array elements 
 # being compared, and returns negative if the length of the left 
 # element is smaller than the length of the right element, 0 if 
 # the elements' lengths are equal, and positive if the length of
-# the left element is greater] 
+# the left element is greater
 # Returns the sorted array itself
-# Based on the bubble sort algorithm discussed on the Wikipedia
-# page here --> https://en.wikipedia.org/wiki/Bubble_sort
-#
-# Use the splat (*) operator to create an array from a range
-# Use the begin / end until loop
 # Inform the user if no block is given, or block is nil or empty
 
 def bubble_sort_by arr
