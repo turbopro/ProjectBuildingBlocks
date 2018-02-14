@@ -45,7 +45,6 @@ bubble_sort(Array.new(10000) { rand(1..100000) }); nil
 def bubble_sort_by arr
   
   return "No block given" unless block_given?
-  
   b = yield("a", "b") if block_given?
   return "Block is nil or empty" if b.nil? or b == "" 
   
@@ -65,16 +64,13 @@ def bubble_sort_by arr
   arr  
 end
 
-
 bubble_sort_by(%W(hi hello hey)) { |left, right| left.length - right.length }
-
 bubble_sort_by(["I"]) { |left, right| left.length - right.length }
 bubble_sort_by([]) { |left, right| left.length - right.length }
 
 bubble_sort_by([])
 bubble_sort_by([]) {}
 bubble_sort_by([]) { "" }
-
 
 # generate random strings
 def rnd_str num, max_len
