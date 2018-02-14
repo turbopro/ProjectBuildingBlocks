@@ -44,10 +44,11 @@ bubble_sort(Array.new(10000) { rand(1..100000) }); nil
 
 def bubble_sort_by arr
   
-  return "No block given" unless block_given?
+  return "Error: #{__method__} requires a block" unless block_given?
   b = yield("a", "b") if block_given?
-  return "Block is nil or empty" if b.nil? or b == "" 
+  return "Error: Block cannot be nil or empty" if b.nil? or b == "" 
   
+  return "Error: #{__method__} requires an array of strings" unless arr.is_a? Array
   return arr if arr.length <= 1
   
   len = arr.length
@@ -71,6 +72,7 @@ bubble_sort_by([]) { |left, right| left.length - right.length }
 bubble_sort_by([])
 bubble_sort_by([]) {}
 bubble_sort_by([]) { "" }
+bubble_sort_by("one two") { |left, right| left.length - right.length }
 
 # generate random strings
 def rnd_str num, max_len
