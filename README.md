@@ -72,3 +72,12 @@ Bubble Sort - Ruby Programming, ODIN Project
 - Inform the user if no block is given, or block is nil or empty
 
 ----
+
+### Project 2 -- Enumerable Methods
+Enumerable Methods - Ruby Programming, ODIN Project
+
+#### Module: [enumerable_my_methods](https://github.com/turbopro/ProjectBuildingBlocks/blob/master/enumerable_my_methods.rb "enumerable_my_methods.rb file") 
+
+- Build my version of several Enumerable methods
+
+----
