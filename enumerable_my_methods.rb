@@ -6,6 +6,8 @@
 # only
 # There are two 'helper methods': check_arguments and arith_op 
 # 
+# The file 'enumerable_my_methods_test.rb' provides a list of tests
+#
 # Note: The "my_inject" method, which simulates the core 
 # "inject" method, has to take into account the two optional 
 # arguments, and the optional block.  This tends to leave the
