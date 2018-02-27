@@ -81,8 +81,7 @@ Enumerable Methods - Ruby Programming, ODIN Project
 - Build my version of several Enumerable methods
 - Since Ruby has several collection classes, such as: Array, Hash, Set, Rinda, Struct, OpenStruct, etc., we will limit our my_* methods to the Array, Hash, and Range classes
 only
-- There are three 'helper methods': check_arguments, new_enum, and arith_op 
-- The gem, 'binding_of_caller', is used to retrieve bindings from the call stack 
+- There are two 'helper methods': check_arguments and arith_op 
 
 - The file 'enumerable_my_methods_test.rb' provides a list of tests
  

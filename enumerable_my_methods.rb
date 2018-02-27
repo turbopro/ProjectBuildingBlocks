@@ -4,10 +4,7 @@
 # Array, Hash, Set, Rinda, Struct, OpenStruct, etc., we will
 # limit our my_* methods to the Array, Hash, and Range classes
 # only
-# There are three 'helper methods': check_arguments, new_enum, 
-# and arith_op 
-# The gem, 'binding_of_caller', is used to retrieve bindings
-# from the call stack 
+# There are two 'helper methods': check_arguments and arith_op 
 # 
 # Note: The "my_inject" method, which simulates the core 
 # "inject" method, has to take into account the two optional 
@@ -25,7 +22,7 @@
 
 module Enumerable
   def my_each
-    return Enumerable.new_enum.call(self) unless block_given?
+    return enum_for(__method__) { size } unless block_given?
     case self.class.to_s
     when 'Array', 'Range', 'Enumerator'
       to_a.length.times { |e| yield(to_a[e]) }
@@ -38,7 +35,7 @@ module Enumerable
   end
 
   def my_each_with_index
-    return Enumerable.new_enum.call(self) unless block_given?
+    return enum_for(__method__) { size } unless block_given?
     case self.class.to_s
     when 'Array', 'Range', 'Enumerator'
       to_a.length.times { |e| yield(to_a[e], e) }
@@ -51,7 +48,7 @@ module Enumerable
   end
 
   def my_select
-    return Enumerable.new_enum.call(self) unless block_given?
+    return enum_for(__method__) { size } unless block_given?
     case self.class.to_s
     when 'Array', 'Range', 'Enumerator'
       arr = []
@@ -103,7 +100,7 @@ module Enumerable
   end
 
   def my_map
-    return Enumerable.new_enum.call(self) unless block_given?
+    return enum_for(__method__) { size } unless block_given?
     arr = []
     my_each { |e| arr << yield(e) }
     arr
@@ -174,12 +171,6 @@ module Enumerable
     end
     # when my_...
     # ...
-  end
-
-  ## Create New Enumerable
-  require 'binding_of_caller'
-  def self.new_enum
-    proc { |coll| enum_for(binding.of_caller(1).eval('__method__')) { coll.size } }
   end
 
   ## Arithmetic Operators
