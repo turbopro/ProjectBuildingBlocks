@@ -130,7 +130,7 @@ module Enumerable
         return arr.last
       end
       raise ArgumentError.new("Block given - No block required for arg: 'sym'")
-    when 'empty'
+    when 'zero args'
       unless block_given?
         raise LocalJumpError.new('Block missing - Block required for zero-arg method call')
       end
@@ -159,7 +159,7 @@ module Enumerable
     when 'my_inject'
       case arg.length
       when 0
-        return 'empty' if arg.empty?
+        return 'zero args' if arg.empty?
       when 1
         return 'initial' if arg[0].is_a? Integer
         return 'sym' if Enumerable::INJECT_OPERATORS.include? arg[0]
