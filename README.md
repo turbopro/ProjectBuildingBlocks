@@ -79,5 +79,19 @@ Enumerable Methods - Ruby Programming, ODIN Project
 #### Module: [enumerable_my_methods](https://github.com/turbopro/ProjectBuildingBlocks/blob/master/enumerable_my_methods.rb "enumerable_my_methods.rb file") 
 
 - Build my version of several Enumerable methods
+- Since Ruby has several collection classes, such as: Array, Hash, Set, Rinda, Struct, OpenStruct, etc., we will limit our my_* methods to the Array, Hash, and Range classes
+only
+- There are three 'helper methods': check_arguments, new_enum, and arith_op 
+- The gem, 'binding_of_caller', is used to retrieve bindingsfrom the call stack 
+ 
+- Note: The "my_inject" method, which simulates the core "inject" method, has to take into account the two optional arguments, and the optional block.  This tends to leave the method definition somewhat lengthy and intricate, and thus it hardly follows Ruby's best practices
+
+- Suggested reading for this project: the RubyDoc APIs
+-  [Module Enumerable](https://ruby-doc.org/core-2.4.1/Enumerable.html#method-i-all-3F)
+-  [Class Array](https://ruby-doc.org/core-2.4.1/Array.html#method-i-any-3F)
+-  [Class Hash](https://ruby-doc.org/core-2.4.1/Hash.html)
+-  [Class Range](https://ruby-doc.org/core-2.4.1/Range.html)
+-  [Class Enumerator](https://ruby-doc.org/core-2.4.1/Enumerator.html#method-c-new)
+-  [Class Proc](https://ruby-doc.org/core-2.4.1/Proc.html)
 
 ----

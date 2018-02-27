@@ -1,4 +1,4 @@
-#####	Function: enumerable_methods
+#####	Module: enumerable_my_methods
 
 # Since Ruby has several collection classes, such as:
 # Array, Hash, Set, Rinda, Struct, OpenStruct, etc., we will
@@ -14,6 +14,14 @@
 # arguments, and the optional block.  This tends to leave the
 # method definition somewhat lengthy and intricate, and thus 
 # it hardly follows Ruby's best practices
+#
+# Suggested reading for this project: the RubyDoc APIs
+# Module Enumerable - https://ruby-doc.org/core-2.4.1/Enumerable.html#method-i-all-3F
+# Class Array - https://ruby-doc.org/core-2.4.1/Array.html#method-i-any-3F
+# Class Hash - https://ruby-doc.org/core-2.4.1/Hash.html
+# Class Range - https://ruby-doc.org/core-2.4.1/Range.html
+# Class Enumerator - https://ruby-doc.org/core-2.4.1/Enumerator.html#method-c-new
+# Class Proc - https://ruby-doc.org/core-2.4.1/Proc.html
 
 module Enumerable
   def my_each
