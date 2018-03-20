@@ -25,28 +25,14 @@
 module Enumerable
   def my_each
     return enum_for(__method__) { size } unless block_given?
-    case self.class.to_s
-    when 'Array', 'Range', 'Enumerator'
-      to_a.length.times { |e| yield(to_a[e]) }
-      self
-    when 'Hash'
-      length.times { |e| yield([keys[e], values[e]]) }
-      self
-    else raise NoMethodError.new("No method for coll - If supported, try coll.to_a.#{__method__}")
-    end
+    to_a.length.times { |e| yield(to_a[e]) }
+    self
   end
 
   def my_each_with_index
     return enum_for(__method__) { size } unless block_given?
-    case self.class.to_s
-    when 'Array', 'Range', 'Enumerator'
-      to_a.length.times { |e| yield(to_a[e], e) }
-      self
-    when 'Hash'
-      length.times { |e| yield([keys[e], values[e]], e) }
-      self
-    else raise NoMethodError.new("No method for coll - If supported, try coll.to_a.#{__method__}")
-    end
+    to_a.length.times { |e| yield(to_a[e], e) }
+    self
   end
 
   def my_select
