@@ -143,8 +143,7 @@ module Enumerable
     case method
     when 'my_inject'
       case arg.length
-      when 0
-        return 'zero args' if arg.empty?
+      when 0 then 'zero args'
       when 1
         return 'initial' if arg[0].is_a? Integer
         return 'sym' if Enumerable::INJECT_OPERATORS.include? arg[0]
